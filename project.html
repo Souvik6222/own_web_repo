@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="project.css">
+    <style>
+        body.profile-bg {
+            background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .overlay {
+            background: rgba(20, 20, 30, 0.85);
+            min-height: 100vh;
+        }
+        .featured-img {
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            border-radius: 1rem;
+        }
+    </style>
+</head>
+<body class="profile-bg">
+    <div class="overlay">
+    <div class="container mx-auto p-4 max-w-7xl">
+        <header class="flex justify-between items-center mb-4 text-white">
+            <div class="flex items-center space-x-4">
+                <div class="flex items-center space-x-2">
+                    <img alt="Player level icon" class="w-8 h-8" src="https://i.imgur.com/g60y5bQ.png"/>
+                    <div>
+                        <div class="text-sm font-bold">BLOODY AKASH</div>
+                        <div class="text-xs text-gray-400">DARK SWORD</div>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-2 bg-gray-800 px-3 py-1 rounded-full">
+                    <img alt="Coin icon" class="w-5 h-5" src="https://i.imgur.com/Jz6c1aG.png"/>
+                    <span class="font-semibold">153530</span>
+                </div>
+                <div class="flex items-center space-x-2 bg-gray-800 px-3 py-1 rounded-full">
+                    <span class="text-blue-400 font-bold text-lg">1+</span>
+                </div>
+                <img alt="Rank icon" class="w-10 h-10" src="https://i.imgur.com/g60y5bQ.png"/>
+                <img alt="Token icon" class="w-8 h-8" src="https://i.imgur.com/Jz6c1aG.png"/>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span class="text-xl font-bold">PROFILE</span>
+                <button class="text-3xl font-bold" onclick="alert('Close button clicked!')">X</button>
+            </div>
+        </header>
+        <main class="grid grid-cols-12 gap-4">
+            <aside class="col-span-3">
+                <nav class="space-y-2">
+                    <a class="flex items-center justify-between p-3 rounded-md menu-item active" href="#">
+                        <span class="font-semibold text-lg">GALLERY</span>
+                    </a>
+                    <a class="flex items-center justify-between p-3 rounded-md menu-item" href="#">
+                        <span class="font-semibold text-lg">OVERVIEW</span>
+                        <span class="material-icons">expand_more</span>
+                    </a>
+                    <a class="flex items-center justify-between p-3 rounded-md menu-item" href="#">
+                        <span class="font-semibold text-lg">ROLE</span>
+                        <span class="material-icons">expand_more</span>
+                    </a>
+                    <a class="flex items-center justify-between p-3 rounded-md menu-item" href="#">
+                        <span class="font-semibold text-lg">HISTORY</span>
+                        <span class="material-icons">expand_more</span>
+                    </a>
+                    <a class="flex items-center justify-between p-3 rounded-md menu-item" href="#">
+                        <span class="font-semibold text-lg">WEAPON</span>
+                        <span class="material-icons">expand_more</span>
+                    </a>
+                    <a class="flex items-center justify-between p-3 rounded-md menu-item" href="#">
+                        <span class="font-semibold text-lg">ALBUM</span>
+                        <span class="material-icons">expand_more</span>
+                    </a>
+                    <a class="flex items-center justify-between p-3 rounded-md menu-item" href="#">
+                        <span class="font-semibold text-lg">HONOR SCORE</span>
+                        <span class="material-icons">expand_more</span>
+                    </a>
+                    <a class="flex items-center justify-between p-3 rounded-md menu-item" href="#">
+                        <span class="font-semibold text-lg">WISHLIST</span>
+                        <span class="material-icons">expand_more</span>
+                    </a>
+                </nav>
+            </aside>
+            <section class="col-span-3 flex flex-col justify-start items-center space-y-4 pt-16">
+                <img alt="Player rank icon" class="rank-icon" src="https://i.imgur.com/g60y5bQ.png"/>
+                <img alt="Player rank icon" class="rank-icon" src="https://i.imgur.com/g60y5bQ.png"/>
+                <img alt="Player rank icon" class="rank-icon" src="https://i.imgur.com/g60y5bQ.png"/>
+                <img alt="Player rank icon" class="rank-icon" src="https://i.imgur.com/g60y5bQ.png"/>
+            </section>
+            <section class="col-span-6 space-y-4">
+                <div class="player-card rounded-lg p-4 bg-gray-800 bg-opacity-80 shadow-lg">
+                    <div class="flex justify-between items-center mb-2">
+                        <div class="flex items-center space-x-2">
+                            <img alt="Free Fire MAX logo" class="h-6" src="https://i.imgur.com/g60y5bQ.png"/>
+                            <span class="text-sm">DARK SWORD</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <img alt="Settings icon" class="w-6 h-6 cursor-pointer" src="https://i.imgur.com/Jz6c1aG.png" onclick="alert('Settings button clicked!')"/>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="relative">
+                            <img alt="Player avatar" class="w-24 h-24 rounded-md border-2 border-yellow-400" src="https://i.imgur.com/g60y5bQ.png"/>
+                            <span class="absolute -bottom-2 -left-2 bg-yellow-400 text-black text-xs font-bold px-2 py-1 rounded">Lv. 67</span>
+                        </div>
+                        <div class="flex-grow">
+                            <div class="text-xl font-bold">BLOODY AKASH</div>
+                            <div class="text-gray-400 text-sm">English <span class="text-lg">☾</span></div>
+                            <div class="flex items-center space-x-2 mt-2">
+                                <img alt="Player badge" class="w-6 h-6" src="https://i.imgur.com/g60y5bQ.png"/>
+                                <span class="font-bold text-lg text-white">9249</span>
+                            </div>
+                            <div class="text-xs text-gray-400 mt-1" onclick="alert('UID button clicked!')">UID: 622285646 <span class="material-icons text-sm align-middle cursor-pointer">content_copy</span></div>
+                        </div>
+                    </div>
+                    <div class="mt-4 p-2 rounded-md bg-gray-900 flex items-center justify-between">
+                        <span class="font-semibold text-yellow-400" onclick="alert('Battle Royale button clicked!')"><span class="material-icons align-middle text-lg">arrow_back</span> BATTLE ROYALE</span>
+                        <span class="material-icons text-white">chevron_right</span>
+                    </div>
+                </div>
+                <!-- Featured Character/Item Image -->
+                <div class="flex justify-center">
+                    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80" alt="Featured Character" class="featured-img w-64 h-64 object-cover mb-4 border-4 border-yellow-400">
+                </div>
+                <div class="grid grid-cols-3 gap-4 text-center">
+                    <div class="weapon-card p-2 rounded-lg flex flex-col items-center justify-center bg-gray-700 bg-opacity-80">
+                        <img alt="Badge icon" class="h-12 mb-1" src="https://i.imgur.com/g60y5bQ.png"/>
+                        <p class="text-sm font-semibold">5362</p>
+                        <p class="text-xs text-gray-400">546</p>
+                    </div>
+                    <div class="weapon-card p-2 rounded-lg flex flex-col items-center justify-center bg-gray-700 bg-opacity-80">
+                        <img alt="Heroic emblem" class="h-12 mb-1" src="https://i.imgur.com/g60y5bQ.png"/>
+                        <p class="text-sm font-semibold">HEROIC</p>
+                        <p class="text-xs text-gray-400">EMBLEM</p>
+                    </div>
+                    <div class="weapon-card p-2 rounded-lg flex flex-col items-center justify-center bg-gray-700 bg-opacity-80">
+                        <img alt="Rusher badge" class="h-12 mb-1" src="https://i.imgur.com/g60y5bQ.png"/>
+                        <p class="text-sm font-semibold">RUSHER</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="weapon-card p-2 rounded-lg bg-gray-700 bg-opacity-80">
+                        <img alt="Red weapon skin" class="w-full h-20 object-contain rounded-md" src="https://i.imgur.com/g60y5bQ.png"/>
+                        <div class="text-center mt-1">
+                            <span class="bg-gray-900 text-yellow-400 text-xs font-bold px-2 py-1 rounded">Lv. 4</span>
+                        </div>
+                    </div>
+                    <div class="weapon-card p-2 rounded-lg bg-gray-700 bg-opacity-80">
+                        <img alt="Blue weapon skin" class="w-full h-20 object-contain rounded-md" src="https://i.imgur.com/g60y5bQ.png"/>
+                        <div class="text-center mt-1">
+                            <span class="bg-gray-900 text-yellow-400 text-xs font-bold px-2 py-1 rounded">Lv. 4</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="weapon-card p-2 rounded-lg flex items-center justify-center bg-gray-700 bg-opacity-80">
+                        <img alt="Barrel item" class="h-20 object-contain" src="https://i.imgur.com/Jz6c1aG.png"/>
+                    </div>
+                    <div class="weapon-card p-2 rounded-lg flex items-center justify-center bg-gray-700 bg-opacity-80">
+                        <img alt="Badge item" class="h-20 object-contain" src="https://i.imgur.com/g60y5bQ.png"/>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    </div>
+    <script src="project.js"></script>
+</body>
+</html>
